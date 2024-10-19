@@ -44,7 +44,7 @@ public class HelloController {
         calculator.setOperand2(Double.parseDouble(display.getText()));  // Set the second operand
         calculator.calculate();  // Perform the calculation
         if (calculator.isError()) {
-            display.setText("Error");  // Handle error cases, like division by zero
+            display.setText("Error: Division by zero cannot be performed");  // Handle error cases, like division by zero
         } else {
             display.setText(String.valueOf(calculator.getResult()));  // Display the result
         }

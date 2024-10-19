@@ -4,13 +4,14 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="520.0" prefWidth="421.0" spacing="20.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxcalculator.HelloController">
+<VBox alignment="CENTER" prefHeight="520.0" prefWidth="421.0" spacing="20.0" style="-fx-background-color: #cce0ff;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxcalculator.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -19,7 +20,7 @@
             <Font name="Damascus Bold" size="19.0" />
         </font>
     </Label>
-    <TextField fx:id="display" prefHeight="82.0" prefWidth="381.0" editable="false" />
+    <TextField fx:id="display" editable="false" prefHeight="82.0" prefWidth="381.0" />
     <GridPane prefHeight="288.0" prefWidth="381.0">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -35,23 +36,74 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
         <children>
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="1" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="2" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="0" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="3" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="4" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="C" onAction="#onClearButtonClicked" textAlignment="CENTER" GridPane.halignment="CENTER" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="7" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="5" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="8" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="9" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="6" onAction="#onDigitButtonClicked" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="," textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="/" onAction="#onOperatorButtonClicked" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="=" onAction="#onEqualsButtonClicked" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="+" onAction="#onOperatorButtonClicked" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="-" onAction="#onOperatorButtonClicked" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" text="x" onAction="#onOperatorButtonClicked" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="1" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="2" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="0" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="3" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="4" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onClearButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffcce0;" text="C" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="7" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="5" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="8" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="9" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onDigitButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="6" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" text="," textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onOperatorButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffcce0;" text="/" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onEqualsButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffcce0;" text="=" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onOperatorButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffcce0;" text="+" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onOperatorButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffcce0;" text="-" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <effect>
+               <Glow />
+            </effect></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" mnemonicParsing="false" onAction="#onOperatorButtonClicked" prefHeight="39.0" prefWidth="69.0" style="-fx-background-color: #ffcce0;" text="*" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+            <effect>
+               <Glow />
+            </effect></Button>
         </children>
     </GridPane>
 </VBox>
