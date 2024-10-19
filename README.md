@@ -51,4 +51,9 @@ If pressing the C (Clear) button only clears the display but doesn’t reset int
 ![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.31.22.png)
 ![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.40.20.png)
 ![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.31.29.png)
-![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+
+5.Division by zero:
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.49.17.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.49.23.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.49.28.png)
+
