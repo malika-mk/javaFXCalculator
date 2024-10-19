@@ -48,7 +48,7 @@ public class HelloController {
         } else {
             display.setText(String.valueOf(calculator.getResult()));  // Display the result
         }
-        newCalculation = true;  // Mark the calculation as complete
+        newCalculation = true;  //git  Mark the calculation as complete
     }
 
     // Method to handle the clear button click (C)
