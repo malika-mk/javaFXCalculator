@@ -31,3 +31,18 @@ No Operator Chaining:
 Currently, if you want to chain operations (e.g., 5 + 3 - 2), you need to press = after each operation. This can be improved by modifying the calculation logic to store multiple operations.
 Clear Button Doesn't Fully Reset:
 If pressing the C (Clear) button only clears the display but doesn’t reset internal values (like firstOperand or currentOperator), the next operation might behave unexpectedly. This can be fixed by ensuring C resets all variables.
+
+
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.29.11.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.29.23.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.29.33.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.29.56.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.30.07.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.30.11.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.30.58.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.31.06.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.31.10.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.31.22.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.40.20.png)
+![Image alt](https://github.com/malika-mk/javaFXCalculator/blob/main/Снимок%20экрана%202024-10-19%20в%2016.31.29.png)
+![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
